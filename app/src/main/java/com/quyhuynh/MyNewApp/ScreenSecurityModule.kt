@@ -11,14 +11,14 @@ class ScreenSecurityModule(private val reactContext: ReactApplicationContext) : 
 
     @ReactMethod
     fun enableSecure() {
-        currentActivity?.window?.setFlags(
-            WindowManager.LayoutParams.FLAG_SECURE,
-            WindowManager.LayoutParams.FLAG_SECURE
-        )
+        //currentActivity?.window?.setFlags(
+        //    WindowManager.LayoutParams.FLAG_SECURE,
+        //    WindowManager.LayoutParams.FLAG_SECURE
+        //)
     }
 
     @ReactMethod
     fun disableSecure() {
-        currentActivity?.window?.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
+        //currentActivity?.window?.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
     }
 }
